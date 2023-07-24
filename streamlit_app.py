@@ -13,7 +13,6 @@ If you have any questions, checkout our [documentation](https://docs.streamlit.i
 forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
-我在这里做了修改
 """
 
 
@@ -36,3 +35,21 @@ for curr_point_num in range(total_points):
 st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
     .mark_circle(color='#0068c9', opacity=0.5)
     .encode(x='x:Q', y='y:Q'))
+
+
+"""
+# My first app
+Here's our first attempt at using data to create a table:
+"""
+
+import streamlit as st
+import pandas as pd
+df = pd.DataFrame({
+  'first column': [1, 2, 3, 4],
+  'second column': [10, 20, 30, 40],
+  'third column': [10, 20, 30, 40]
+})
+
+df
+
+
